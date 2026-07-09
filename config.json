@@ -1,0 +1,6 @@
+{
+    "repo_path" : "/path/to/your/repo",
+    "idle_duration" : 2,
+    "push_enabled" : true,
+    "verbose_level" : 1
+}
