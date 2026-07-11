@@ -27,7 +27,7 @@ class GitPulseHandler(PatternMatchingEventHandler):
             self._trigger_commit
         )
         logger.debug(
-            f"Idle timer started ({self.idle_duration}s)"
+            f"Idle timer started ({self._idle_duration}s)"
         )
         self._timer.start()
 

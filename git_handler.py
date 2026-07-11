@@ -26,12 +26,12 @@ def _has_changes(repo_path):
     return bool(status_output)
 
 def _git_add(repo_path):
-    logger.info("Staged all changes.")
     _run_git_command(["add", "."], repo_path)
+    logger.info("Staged all changes.")
 
 def _git_commit(message, repo_path):
-    logger.info("Commit created successfully.")
     _run_git_command(["commit", "-m", message], repo_path)
+    logger.info("Commit created successfully.")
 
 def _git_push(repo_path, push_enabled):
     try:
