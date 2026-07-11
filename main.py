@@ -64,6 +64,7 @@ def main():
     except KeyboardInterrupt:
         logger.info("Shutdown signal received. Stopping observer.")
         observer.stop()
+        event_handler.shutdown()
     finally:
         observer.join()
         logger.info("GitPulse has stopped.")

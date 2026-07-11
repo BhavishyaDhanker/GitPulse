@@ -1,6 +1,6 @@
 {
-    "repo_path" : "/path/to/your/repo",
-    "idle_duration" : 2,
+    "repo_path" : "/home/god091/Documents/DSA",
+    "idle_duration" : 1800,
     "push_enabled" : true,
-    "verbose_level" : 1
+    "verbose_level" : 2
 }

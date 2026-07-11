@@ -52,4 +52,10 @@ class GitPulseHandler(PatternMatchingEventHandler):
             self._lock.release()
 
 
+    def shutdown(self):
+        if self._timer is not None:
+            self._timer.cancel()
+        self._trigger_commit()
+
+
 
