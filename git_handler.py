@@ -38,6 +38,7 @@ def _git_push(repo_path, push_enabled):
         if push_enabled:
             logger.info("Pushing commits to remote repository.")
             _run_git_command(["push"], repo_path)
+            logger.info("Commits pushed successfully.")
         else:
             logger.info("Push is disabled in the configuration. Skipping push.")
     except RuntimeError as e:
